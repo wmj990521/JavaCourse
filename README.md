@@ -17,10 +17,10 @@ Java第二次试验——模拟学生选课
    * 教师（编号，姓名，性别，年龄，民族，所授课程 ） 
    * 学生（编号，姓名，性别，年龄，民族，所选课程） 
    * 课程（课程编号，课程名字，授课老师，上课地点，上课时间，课程学分）
-2. 编写上述实体类以及测试主类（注意类之间继承关系的适用） 
+2. 编写上述实体类以及测试主类（注意类之间继承关系的适用） 。 
    在测试主类中，实例化多个类实体，模拟学生选课操作、打印课程信息（信息包括：编号、课程名称、上课地点、时间、授课教师 ）；模拟学生退课操作，再打印课程信息。  
 ## 三、实验过程
-1. Person类要求，人员有属性：编号，姓名，性别，年龄，民族，要求setSpeed（int m）方法将参数m的值赋值给speed，要求getSpeed（）返回speed的值
+1. 创建Person封装类，人员有属性：编号，姓名，性别，年龄，民族，要求setSpeed（int m）方法将参数m的值赋值给speed，要求getSpeed（）返回speed的值
 2. CPU类要求getSpeed（）返回speed的值，要求setSpeed（int m）方法将参数m的值赋值给speed；  
    HardDisk类要求getAmount（）返回amount的值，要求setAmount（int m）方法将参数m的值赋值给amount；  
    PC类要求setCPU（CPU c）方法将参数c的值赋值给cpu,要求setHardDisk（HardDisk h）方法将参数h的值赋值给HD,要求show()方法能显示cpu的速度和硬盘的容量。
