@@ -114,6 +114,6 @@ public Person(int number, String name, String sex, int age, String nation) {
   该学生已经退课或还没有选课  
   ![img](https://mail.qq.com/cgi-bin/frame_html?sid=77DSkd-m4yuxFlsE&r=5d3429efc03eec54507fa5fb5728f0b9)
   
-## 五、实验感想
-  通过这次实验，我学会了类的编写，更加了解了类的成员的使用;学会了构造方法的使用，有参的构造方法和无参的构造方法;更加理解了访问权限，private、protected、public修饰符的作用。
+## 六、实验感想
+  通过这次实验，我学会了定义类中的属性以及方法，掌握了面向对象的类设计方法（属性、方法），学习了类的继承用法，理解了通过构造方法实例化对象，学会了使用super()实例化子类，掌握了用toString（）方法来输出对象的信息，使用了if-else做判断。
 
