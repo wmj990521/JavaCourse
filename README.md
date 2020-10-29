@@ -52,49 +52,67 @@ Java第二次试验——模拟学生选课
   * stu1调用setCourse(Course course)方法，调用时实参是cour1,stu2调用setCourse(Course course)方法，调用时实参是cour2;
   * stu1调用setTeacher(String teacher)方法，调用时实参是tea1,stu2调用setTeacher(String teacher)方法，调用时实参是tea2;
   * 创建if-else()方法判断学生所选课程是否为空，若为空，输出该学生已经退课或还没有选课，否则，输出学生的信息，该学生所选课程的信息，该学生所选课程的老师的信息。
-## 三、核心方法
-1. 方法1
+## 四、核心方法
+1. 方法1:get(),set()方法
 ```
-public int getSpeed() {
-  return speed;
+public int getNumber() {
+		return number;
 }
-public void setSpeed(int speed) {
-  this.speed = speed;
-}
- ```
- 2. 方法2
- ```
- public void show(){
-   System.out.println("CPU的速度："+cpu.getSpeed());
-   System.out.println("硬盘容量："+HD.getAmount());
+public void setNumber(int number) {
+		this.number = number;
 }
  ```
- 3. 方法3
+ 2. 方法2：构造方法
  ```
- CPU cpu=new CPU();
- HardDisk disk=new HardDisk();
- PC pc=new PC();
- cpu.setSpeed(2200);
- disk.setAmount(200);
- pc.setCpu(cpu);
- pc.setHD(disk);
- pc.show();
+public Person() {
+		super();
+		// TODO Auto-generated constructor stub
+}
+public Person(int number, String name, String sex, int age, String nation) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.sex = sex;
+		this.age = age;
+		this.nation = nation;
+}
  ```
- 4. 方法4
+ 3. 方法3：toString（）方法
  ```
- public CPU() {
-   super();
-   // TODO Auto-generated constructor stub
- }
- public CPU(int speed, float price) {
-   super();
-   this.speed = speed;
-   this.price = price;
+ public String toString() {
+		return "\t编号:" + number + "\t姓名:" + name + "\t性别:" + sex+ "\t年龄:" + age+ "\t民族:" + nation;
+	}
+ ```
+ 4. 方法4：继承
+ ```
+ class Student extends Person{
  }
  ```
-## 四、实验结果
-  运行成功，输出结果：CPU的速度：2200   硬盘容量：200
-  ![img](http://note.youdao.com/yws/public/resource/253af59d7c3cc80c27cd7edcfc8a506e/xmlnote/WEBRESOURCEed65ad4dbc90574ec7d9e524bb29c401/13)
+ 5. 方法5：创建和使用对象
+ ```
+ Student stu1=new Student(1,"Karry","男",21,"汉族");
+ Teacher tea1=new Teacher(1,"Wang","女",31,"汉族");
+ Course cour1=new Course(1,"高数","Jackson","1教102","08:00-09:30",2.0);
+ stu1.setCourse(cour1);
+ stu1.setTeacher(tea1);
+ ```
+  6. 方法6：if-else方法
+ ```
+ if(stu1.getCourse().getCoursenumber()==0){
+			System.out.println("学生:\t编号:"+stu1.getNumber()+"\t姓名："+stu1.getName()+"\n该学生已经退课或还没有选课");
+		}else{
+			System.out.println(stu1);
+		}
+ ```
+## 五、实验结果
+  运行成功，输出结果：
+  学生:	编号:1	姓名:Karry	性别:男	年龄:21	民族:汉族  
+  学生所选课程信息:	课程编号：1	课程名字：高数	授课老师:Jackson	上课地点:1教102	上课时间:08:00-09:30	课程学分:2.0  
+  授课老师信息:	老师姓名：Wang	性别:女	年龄:31  
+
+  学生:	编号:2	姓名：鹿晗  
+  该学生已经退课或还没有选课  
+  ![img](https://mail.qq.com/cgi-bin/frame_html?sid=77DSkd-m4yuxFlsE&r=5d3429efc03eec54507fa5fb5728f0b9)
   
 ## 五、实验感想
   通过这次实验，我学会了类的编写，更加了解了类的成员的使用;学会了构造方法的使用，有参的构造方法和无参的构造方法;更加理解了访问权限，private、protected、public修饰符的作用。
