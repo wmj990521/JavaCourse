@@ -20,30 +20,30 @@ Java第二次试验——模拟学生选课
 2. 编写上述实体类以及测试主类（注意类之间继承关系的适用） 。 
    在测试主类中，实例化多个类实体，模拟学生选课操作、打印课程信息（信息包括：编号、课程名称、上课地点、时间、授课教师 ）；模拟学生退课操作，再打印课程信息。  
 ## 三、实验过程
-1. 创建Person封装类，人员有属性：编号，姓名，性别，年龄，民族;  
-   要求setNumber(int number)方法将参数number的值赋值给number，要求getNumber()返回number的值； 
-   要求setName(String name) 方法将参数name的值赋值给name，要求getName（）返回name的值； 
-   要求setSex(String sex)方法将参数sex的值赋值给sex，要求getSex（）返回sex的值； 
-   要求setAge(int age)方法将参数age的值赋值给age，要求getAge（）返回age的值； 
-   要求setNation(String nation)方法将参数nation的值赋值给nation，要求getNation（）返回nation的值； 
-   创建Person类的构造方法，实例化对象； 
+1. 创建Person封装类，人员有属性：编号，姓名，性别，年龄，民族;   
+   要求setNumber(int number)方法将参数number的值赋值给number，要求getNumber()返回number的值；  
+   要求setName(String name) 方法将参数name的值赋值给name，要求getName（）返回name的值;     
+   要求setSex(String sex)方法将参数sex的值赋值给sex，要求getSex（）返回sex的值;     
+   要求setAge(int age)方法将参数age的值赋值给age，要求getAge（）返回age的值;    
+   要求setNation(String nation)方法将参数nation的值赋值给nation，要求getNation（）返回nation的值;  
+   创建Person类的构造方法，实例化对象;  
    创建toString()方法，返回person的信息。 
-2. 创建Student类继承父类Person，学生有属性：编号，姓名，性别，年龄，民族，所选课程； 
-   要求setCourse(Course course)方法将参数course的值赋值给course，要求getCourse()返回course的值； 
-   创建Student类的构造方法，实例化对象； 
+2. 创建Student类继承父类Person，学生有属性：编号，姓名，性别，年龄，民族，所选课程；   
+   要求setCourse(Course course)方法将参数course的值赋值给course，要求getCourse()返回course的值；   
+   创建Student类的构造方法，实例化对象；   
    创建toString()方法，返回学生的信息。 
-3. 创建Teacher类继承父类Person，学生有属性：编号，姓名，性别，年龄，民族，所授课程； 
-   要求setCourse(Course course)方法将参数course的值赋值给course，要求getCourse()返回course的值； 
-   创建Teacher类的构造方法，实例化对象； 
-   创建toString()方法，返回老师的信息。 
-4. 创建Course类，属性：课程编号，课程名字，授课老师，上课地点，上课时间，课程学分； 
-   要求setCoursenumber(int coursenumber)方法将参数coursenumber的值赋值给coursenumber，要求getCoursenumber返回coursenumber的值； 
-   要求setCoursename(String coursename)方法将参数coursename的值赋值给coursename，要求getCoursename（）返回coursename的值； 
-   要求setTeacher(String teacher)方法将参数teacher的值赋值给teacher，要求getTeacher（）返回teacher的值； 
-   要求setSite(String site)方法将参数site的值赋值给site，要求getSite（）返回site的值； 
-   要求setTime(String time)方法将参数time的值赋值给time，要求getTime（）返回time的值； 
-   要求setCredit(double credit)方法将参数credit的值赋值给credit，要求getCredit（）返回credit的值； 
-   创建Course类的构造方法，实例化对象； 
+3. 创建Teacher类继承父类Person，学生有属性：编号，姓名，性别，年龄，民族，所授课程；   
+   要求setCourse(Course course)方法将参数course的值赋值给course，要求getCourse()返回course的值；   
+   创建Teacher类的构造方法，实例化对象；  
+   创建toString()方法，返回老师的信息。  
+4. 创建Course类，属性：课程编号，课程名字，授课老师，上课地点，上课时间，课程学分；   
+   要求setCoursenumber(int coursenumber)方法将参数coursenumber的值赋值给coursenumber，要求getCoursenumber返回coursenumber的值；   
+   要求setCoursename(String coursename)方法将参数coursename的值赋值给coursename，要求getCoursename（）返回coursename的值；   
+   要求setTeacher(String teacher)方法将参数teacher的值赋值给teacher，要求getTeacher（）返回teacher的值；   
+   要求setSite(String site)方法将参数site的值赋值给site，要求getSite（）返回site的值；    
+   要求setTime(String time)方法将参数time的值赋值给time，要求getTime（）返回time的值；   
+   要求setCredit(double credit)方法将参数credit的值赋值给credit，要求getCredit（）返回credit的值；   
+   创建Course类的构造方法，实例化对象；   
    创建toString()方法，返回课程的信息。 
  5. 创建主类Test类
   * main方法中创建两个Student对象stu1、stu2,stu1将自己的属性：编号，姓名，性别，年龄，民族,设置为(1,"Karry","男",21,"汉族"),stu2将自己的属性：编号，姓名，性别，年龄，民族设置为(2,"鹿晗","男",21,"汉族");
